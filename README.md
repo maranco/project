@@ -1,2 +1,1 @@
-# s3project
-semester 3 project
+possible repo for project over semester three
