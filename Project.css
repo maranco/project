@@ -1,0 +1,54 @@
+#Google{
+	margin:0;
+	padding:4ex;
+	overflow: hidden;
+	border: solid #e7e7e7;
+	background-color: white;
+}
+/*-- This is the style for the Upcoming Events Box */
+#eventsBox{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   border: solid #e7e7e7;
+   background-color: #f1f1f1;
+}
+#eventsBox ul{
+	list-style:none;
+}
+
+/* --- This is the style for the Hello XYZ Box */
+#helloBox {
+   list-style: none;
+   margin: 0;
+   padding: 4ex;
+   overflow: hidden;
+   border: solid #e7e7e7;
+   background-color: white;	
+}
+
+/* --- This is for someone to personalise their homepage with a photo --- */
+#memePhoto {
+	
+}
+/*----- This formats the links within the content section of the page--------- */
+/* the id for links will need to be called "content" so that the formatting will apply */
+/* no links have been created yet. This is just recycled code --- */
+/*
+#content a:link{
+   color: darkblue;
+   text-decoration: underline;
+}
+#content a:visited{
+	color: purple;
+	text-decoration: none;
+}
+#content a:hover{
+	color: purple;
+	text-decoration: underline;
+}
+#content a:active{
+    color: purple;
+	text-decoration: underline;
+}	*/
