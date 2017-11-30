@@ -1,9 +1,14 @@
+h1, h2, h3, h4, h5, h6, body {
+    font-family: Arial, sans-serif;
+}
+
 #Google{
 	margin:0;
-	padding:4ex;
+	padding: 2ex 4ex;
 	overflow: hidden;
 	border: solid #e7e7e7;
 	background-color: white;
+    float: right;
 }
 /*-- This is the style for the Upcoming Events Box */
 #eventsBox{
@@ -13,6 +18,7 @@
    overflow: hidden;
    border: solid #e7e7e7;
    background-color: #f1f1f1;
+
 }
 #eventsBox ul{
 	list-style:none;
@@ -20,12 +26,13 @@
 
 /* --- This is the style for the Hello XYZ Box */
 #helloBox {
-   list-style: none;
-   margin: 0;
-   padding: 4ex;
-   overflow: hidden;
-   border: solid #e7e7e7;
-   background-color: white;	
+    list-style: none;
+    margin: 0;
+    padding: 4ex;
+    overflow: hidden;
+    border: solid #e7e7e7;
+    background-color: white;
+    clear: both;
 }
 
 /* --- This is for someone to personalise their homepage with a photo --- */
