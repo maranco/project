@@ -3,9 +3,17 @@
 
 
 <head>
-   <title>StartPage</title>
-   <meta name = "description" content = "A startpage to organise assignments, projects and stuff.">
-   <link rel = "stylesheet" title="site-style" href="Project.css" type="text/css" media="screen">
+    <title>StartPage</title>
+    <meta charset="UTF-8">
+    <meta name = "description" content = "A startpage to organise assignments, projects and stuff.">
+    <link rel = "stylesheet" title="site-style" href="Project.css" type="text/css" media="screen">
+  
+    <script src='fullcalendar/lib/jquery.min.js'></script>
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script src='fullcalendar/fullcalendar.js'></script>
+    <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+    <script src="project.js"></script>
+
 <!--   <script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>
    <script>filestack.setKey('AZLetFPfrQvWAdL3xAUV4z'); </script>
 -->    
@@ -15,13 +23,20 @@
 
   <!-- Modify so it searches Google -->
   <div id="Google">
-     <h3> Google Search... </h3>
+     <!-- <h3> Google Search... </h3> -->
   <a href="googles-new-logo.gif"><img src="googles-new-logo.gif" height="100px" width="200px"></a>
   <form method="get" action="https://www.google.com/search">
     <input type="text" name="q" size="31" placeholder="Search Google or type URL">
   </form>
   </div>
   
+
+
+    <div class="container">
+        <div id='calendar'></div>
+    </div>
+
+
   
   <div id="eventsBox">
   <h1>Upcoming Events: </h1>
@@ -65,6 +80,8 @@
   <!-- command to database to add item -->
   <!-- a command to database to modify and item -->
   <!-- a command to database to remove an item -->
+
+
   
   
   
