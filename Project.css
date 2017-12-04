@@ -134,6 +134,12 @@ h1, h2, h3, h4, h5, h6, body {
 /* --- This is for someone to personalise their homepage with a photo --- */
 #memePhoto {
 }
+
+.container {
+   width: 50%;
+   margin: 2em 2em;
+}
+
 /*----- This formats the links within the content section of the page--------- */
 /* the id for links will need to be called "content" so that the formatting will apply */
 /* no links have been created yet. This is just recycled code --- */

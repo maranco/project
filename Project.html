@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+
+<head>
+    <title>StartPage</title>
+    <meta charset="UTF-8">
+    <meta name = "description" content = "A startpage to organise assignments, projects and stuff.">
+    <link rel = "stylesheet" title="site-style" href="Project.css" type="text/css" media="screen">
+  
+    <script src='fullcalendar/lib/jquery.min.js'></script>
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script src='fullcalendar/fullcalendar.js'></script>
+    <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+    <script src="project.js"></script>
+
+<!--   <script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>
+   <script>filestack.setKey('AZLetFPfrQvWAdL3xAUV4z'); </script>
+-->    
+</head>
+
+<body>
+
+  <!-- Modify so it searches Google -->
+  <div id="Google">
+     <!-- <h3> Google Search... </h3> -->
+  <a href="googles-new-logo.gif"><img src="googles-new-logo.gif" height="100px" width="200px"></a>
+  <form method="get" action="https://www.google.com/search">
+    <input type="text" name="q" size="31" placeholder="Search Google or type URL">
+  </form>
+  </div>
+  
+
+
+    <div class="container">
+        <div id='calendar'></div>
+    </div>
+
+
+  
+  <div id="eventsBox">
+  <h1>Upcoming Events: </h1>
+  
+  <ul>
+  <li><h4> Date: </h4></li>
+  <li><h4> Subject: </h4></li>
+  <li><h4> Description: </h4></li>
+  </ul>
+  
+  <!-- command to database to remove item --> Done
+  <!-- command to database to add an item --> Add
+  <!-- command to database to modify an item --> Modify
+  </div>
+  
+  <div id="helloBox">
+  <p> Hello John Smith! </p>
+  </div>
+  
+  <div id="photoMeme">
+  <!-- <label> Select a Photo to Personalise Your Home Page: <input type="image" name="image" /></label> -->
+  <!-- command to allow a picture to be uploaded -->
+<!--  <button onclick="openPicker();">Upload Image</button> -->
+<!--     <script type="text/javascript"> 
+  var fsClient = filestack.init('AZLetFPfrQvWAdL3xAUV4z');
+  function openPicker() {
+    fsClient.pick({
+      fromSources:["local_file_system","url","imagesearch","facebook","instagram","googledrive","dropbox","onedrive","picasa","webcam"],
+      maxSize:102400000,
+      maxFiles:1,
+      minFiles:0
+    }).then(function(response) {
+      // declare this function to handle response
+      handleFilestack(response);
+    });
+  }
+</script> -->
+  </div>
+  
+  <!-- a calendar with events drawn onto it --> 
+  <!-- command to database to add item -->
+  <!-- a command to database to modify and item -->
+  <!-- a command to database to remove an item -->
+
+
+  
+  
+  
+  <div id="favLinks"
+  <h2> Favourite Links </h2>
+    <iframe>
+      <!-- a command to a database to allow a link to be added --> Add Link
+      <!-- a command to a database to remove a link --> Remove Link
+    </iframe>
+  </div>
+  
+  <h4> Search Events </h4>
+  <!-- Modify so it searches through the database of events -->
+  
+  <p id="footer"> Footer </p>
+  <!-- Modify so it shows the date -->
+  
+</body>
+
+</html> 
