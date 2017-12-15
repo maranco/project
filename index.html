@@ -9,9 +9,16 @@
     <title>StartPage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" title="site-style" href="Project.css" type="text/css" media="screen" />
-    <!--   <script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>
-       <script>filestack.setKey('AZLetFPfrQvWAdL3xAUV4z'); </script>
-    -->
+  
+    <script src='fullcalendar/lib/jquery.min.js'></script>
+    <script src='fullcalendar/lib/moment.min.js'></script>
+    <script src='fullcalendar/fullcalendar.js'></script>
+    <link rel='stylesheet' href='fullcalendar/fullcalendar.css' />
+    <script src="project.js"></script>
+
+<!--   <script type="text/javascript" src="https://static.filestackapi.com/v3/filestack.js"></script>
+   <script>filestack.setKey('AZLetFPfrQvWAdL3xAUV4z'); </script>
+-->    
 </head>
 
 <body>
@@ -51,48 +58,49 @@
     </div>
 
 
-
-    <div id="photoMeme">
-        <!-- <label> Select a Photo to Personalise Your Home Page: <input type="image" name="image" /></label> -->
-        <!-- command to allow a picture to be uploaded -->
-        <!--  <button onclick="openPicker();">Upload Image</button> -->
-        <!--     <script type="text/javascript">
-          var fsClient = filestack.init('AZLetFPfrQvWAdL3xAUV4z');
-          function openPicker() {
-            fsClient.pick({
-              fromSources:["local_file_system","url","imagesearch","facebook","instagram","googledrive","dropbox","onedrive","picasa","webcam"],
-              maxSize:102400000,
-              maxFiles:1,
-              minFiles:0
-            }).then(function(response) {
-              // declare this function to handle response
-              handleFilestack(response);
-            });
-          }
-        </script> -->
+    <div class="container">
+        <div id='calendar'></div>
     </div>
 
-    <!-- a calendar with events drawn onto it -->
-    <!-- command to database to add item -->
-    <!-- a command to database to modify and item -->
-    <!-- a command to database to remove an item -->
+  <div id="photoMeme">
+  <!-- <label> Select a Photo to Personalise Your Home Page: <input type="image" name="image" /></label> -->
+  <!-- command to allow a picture to be uploaded -->
+<!--  <button onclick="openPicker();">Upload Image</button> -->
+<!--     <script type="text/javascript"> 
+  var fsClient = filestack.init('AZLetFPfrQvWAdL3xAUV4z');
+  function openPicker() {
+    fsClient.pick({
+      fromSources:["local_file_system","url","imagesearch","facebook","instagram","googledrive","dropbox","onedrive","picasa","webcam"],
+      maxSize:102400000,
+      maxFiles:1,
+      minFiles:0
+    }).then(function(response) {
+      // declare this function to handle response
+      handleFilestack(response);
+    });
+  }
+</script> -->
+  </div>
 
+  <!-- a calendar with events drawn onto it -->
+  <!-- command to database to add item -->
+  <!-- a command to database to modify and item -->
+  <!-- a command to database to remove an item -->
 
+  <div id="favLinks">
+  <h2> Favourite Links </h2>
+    <iframe>
+      <!-- a command to a database to allow a link to be added --> Add Link
+      <!-- a command to a database to remove a link --> Remove Link
+    </iframe>
+  </div>
 
-    <div id="favLinks">
-        <h2> Favourite Links </h2>
-        <iframe>
-            <!-- a command to a database to allow a link to be added --> Add Link
-            <!-- a command to a database to remove a link --> Remove Link
-        </iframe>
-    </div>
+  <h4> Search Events </h4>
+  <!-- Modify so it searches through the database of events -->
 
-    <h4> Search Events </h4>
-    <!-- Modify so it searches through the database of events -->
-
-    <p id="footer"> Footer </p>
-    <!-- Modify so it shows the date -->
+  <p id="footer"> Footer </p>
+  <!-- Modify so it shows the date -->
 
 </body>
 
-</html> 
+</html>

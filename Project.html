@@ -1,12 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<?xml version="1.0" encoding="UTF-8" ?>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 
 <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="A startpage to organise assignments, projects and stuff." />
     <title>StartPage</title>
-    <meta charset="UTF-8">
-    <meta name = "description" content = "A startpage to organise assignments, projects and stuff.">
-    <link rel = "stylesheet" title="site-style" href="Project.css" type="text/css" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" title="site-style" href="Project.css" type="text/css" media="screen" />
   
     <script src='fullcalendar/lib/jquery.min.js'></script>
     <script src='fullcalendar/lib/moment.min.js'></script>
@@ -21,41 +23,45 @@
 
 <body>
 
-  <!-- Modify so it searches Google -->
-  <div id="Google">
-     <!-- <h3> Google Search... </h3> -->
-  <a href="googles-new-logo.gif"><img src="googles-new-logo.gif" height="100px" width="200px"></a>
-  <form method="get" action="https://www.google.com/search">
-    <input type="text" name="q" size="31" placeholder="Search Google or type URL">
-  </form>
-  </div>
-  
+    <!-- Modify so it searches Google -->
+    <div id="search-bar">
+        <!--<h3> Google Search... </h3>-->
+        <!--<a href="https://www.google.com" target="_blank"><img src="googles-new-logo.gif" height="100" width="207"></a>-->
+        <form id="search-form" method="get" action="https://www.google.com/search" target="_blank">
+            <input type="text" class="search-google" name="q" size="30" placeholder="Google Search" />
+            <input type="submit" class="submit-google" value="Search" />
+        </form>
+    </div>
+
+    <div id="helloBox">
+        <p> Hello John Smith! </p>
+    </div>
+
+
+    <div id="eventsBox">
+        <h1>Upcoming Events: </h1>
+
+        <ul>
+            <li><h4> Date: </h4></li>
+            <li><h4> Subject: </h4></li>
+            <li><h4> Description: </h4></li>
+        </ul>
+        <ul>
+            <li><h4> Date: </h4></li>
+            <li><h4> Subject: </h4></li>
+            <li><h4> Description: </h4></li>
+        </ul>
+
+        <!-- command to database to remove item --> Done
+        <!-- command to database to add an item --> Add
+        <!-- command to database to modify an item --> Modify
+    </div>
 
 
     <div class="container">
         <div id='calendar'></div>
     </div>
 
-
-  
-  <div id="eventsBox">
-  <h1>Upcoming Events: </h1>
-  
-  <ul>
-  <li><h4> Date: </h4></li>
-  <li><h4> Subject: </h4></li>
-  <li><h4> Description: </h4></li>
-  </ul>
-  
-  <!-- command to database to remove item --> Done
-  <!-- command to database to add an item --> Add
-  <!-- command to database to modify an item --> Modify
-  </div>
-  
-  <div id="helloBox">
-  <p> Hello John Smith! </p>
-  </div>
-  
   <div id="photoMeme">
   <!-- <label> Select a Photo to Personalise Your Home Page: <input type="image" name="image" /></label> -->
   <!-- command to allow a picture to be uploaded -->
@@ -75,30 +81,26 @@
   }
 </script> -->
   </div>
-  
-  <!-- a calendar with events drawn onto it --> 
+
+  <!-- a calendar with events drawn onto it -->
   <!-- command to database to add item -->
   <!-- a command to database to modify and item -->
   <!-- a command to database to remove an item -->
 
-
-  
-  
-  
-  <div id="favLinks"
+  <div id="favLinks">
   <h2> Favourite Links </h2>
     <iframe>
       <!-- a command to a database to allow a link to be added --> Add Link
       <!-- a command to a database to remove a link --> Remove Link
     </iframe>
   </div>
-  
+
   <h4> Search Events </h4>
   <!-- Modify so it searches through the database of events -->
-  
+
   <p id="footer"> Footer </p>
   <!-- Modify so it shows the date -->
-  
+
 </body>
 
-</html> 
+</html>
