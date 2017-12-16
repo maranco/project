@@ -112,12 +112,16 @@ h1, h2, h3, h4, h5, h6, body {
     padding: 0;
     overflow: hidden;
     border: solid #e7e7e7;
-    background-color: #f1f1f1;
+    /*background-color: #f1f1f1;*/
     clear: both;
 }
 
 #eventsBox ul {
     list-style: none;
+}
+
+#eventsBox h1 {
+    margin: 1em;
 }
 
 /* --- This is the style for the Hello XYZ Box */
@@ -136,7 +140,7 @@ h1, h2, h3, h4, h5, h6, body {
 }
 
 .container {
-   width: 50%;
+   width: 45%;
    margin: 2em 2em;
 }
 
